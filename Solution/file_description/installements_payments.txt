@@ -1,0 +1,8 @@
+- SK_ID_PREV ( hashed ) : ID du crédit précédent dans Home Credit lié au prêt dans notre échantillon. (Un prêt dans notre échantillon peut avoir 0,1,2 ou plus de prêts précédents dans Home Credit).
+- SK_ID_CURR ( hashed ) : ID du prêt dans notre échantillon.
+- NUM_INSTALMENT_VERSION : Version du calendrier des versements (0 pour les cartes de crédit) du crédit précédent. Le changement de la version des versements d'un mois à l'autre signifie qu'un paramètre du calendrier de paiement a changé.
+- NUM_INSTALMENT_NUMBER :  Sur quelle tranche nous observons le paiement
+- DAYS_INSTALMENT ( time only relative to the application ) : Quand le versement du crédit précédent était supposé être payé (par rapport à la date de demande du prêt actuel)
+- DAYS_ENTRY_PAYMENT ( time only relative to the application ) : Quand l'échéance du crédit précédent a été effectivement payée (par rapport à la date de demande du prêt actuel).
+- AMT_INSTALMENT : Quel était le montant de l'acompte prescrit du crédit précédent sur cet acompte ?
+- AMT_PAYMENT : Ce que le client a effectivement payé sur le crédit précédent sur ce versement.

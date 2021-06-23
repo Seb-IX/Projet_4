@@ -1,0 +1,38 @@
+- SK_ID_PREV ( hashed ) : ID du crédit précédent dans Home Credit lié au prêt dans notre échantillon. (Un prêt dans notre échantillon peut avoir 0,1,2 ou plus de demandes de crédit précédentes dans Home Credit, la demande précédente peut, mais ne doit pas nécessairement conduire à un crédit). 
+- SK_ID_CURR ( hashed ) : ID du prêt dans notre échantillon.
+- NAME_CONTRACT_TYPE : Type de produit du contrat (Prêt d'argent, prêt à la consommation [POS],...) de la demande précédente.
+- AMT_ANNUITY : Annuité de la demande précédente.
+- AMT_APPLICATION : Quel est le montant du crédit demandé par le client lors de la demande précédente ?
+- AMT_CREDIT : Montant final du crédit de la demande précédente. Il diffère de AMT_APPLICATION dans la mesure où AMT_APPLICATION est le montant pour lequel le client a initialement demandé, mais au cours de notre processus d'approbation, il pourrait avoir reçu un montant différent - AMT_CREDIT.
+- AMT_DOWN_PAYMENT : Acompte sur la demande précédente
+- AMT_GOODS_PRICE : Prix du bien que le client a demandé (le cas échéant) lors de la demande précédente.
+- WEEKDAY_APPR_PROCESS_START : Le jour de la semaine où le client a fait sa demande pour la demande précédente.
+- HOUR_APPR_PROCESS_START ( arrondi ) : A quelle heure approximative du jour le client a-t-il fait sa demande pour la demande précédente ?
+- FLAG_LAST_APPL_PER_CONTRACT : Indicateur si c'était la dernière demande pour le contrat précédent. Parfois, par erreur du client ou de notre employé, il peut y avoir plusieurs demandes pour un seul contrat.
+- NFLAG_LAST_APPL_IN_DAY :  Indicateur si la demande était la dernière demande par jour du client. Parfois, les clients font plusieurs demandes par jour. Dans de rares cas, il peut aussi s'agir d'une erreur de notre système qui fait qu'une demande figure deux fois dans la base de données.
+- NFLAG_MICRO_CASH : Indicateur Prêt de micro finance
+- RATE_DOWN_PAYMENT ( normalized ) : Taux d'acompte normalisé sur le crédit précédent
+- RATE_INTEREST_PRIMARY ( normalisé ) : Taux d'intérêt normalisé sur le crédit précédent
+- RATE_INTEREST_PRIVILEGED ( normalisé ) : Taux d'intérêt normalisé sur le crédit précédent.
+- NAME_CASH_LOAN_PURPOSE :  Objet du prêt d'argent
+- NAME_CONTRACT_STATUS : Statut du contrat (approuvé, annulé, ...) de la demande précédente.
+- DAYS_DECISION ( time only relative to the application ) : Par rapport à la demande actuelle, quand la décision concernant la demande précédente a-t-elle été prise ?
+- NAME_PAYMENT_TYPE : Mode de paiement choisi par le client pour payer la demande précédente.
+- CODE_REJECT_REASON : Pourquoi la demande précédente a-t-elle été rejetée ?
+- NAME_TYPE_SUITE : Qui accompagnait le client lors de la demande précédente ?
+- NAME_CLIENT_TYPE : Le client était-il un ancien ou un nouveau client lors de la demande précédente ?
+- NAME_GOODS_CATEGORY : Quel type de marchandises le client a-t-il demandé lors de sa demande précédente ?
+- NAME_PORTFOLIO : La demande précédente portait-elle sur CASH, POS, CAR, �
+- NAME_PRODUCT_TYPE : La demande précédente concernait-elle la vente en gros ou la vente à domicile ?
+- CHANNEL_TYPE : Par quel canal le client a-t-il été acquis lors de la demande précédente ?
+- SELLERPLACE_AREA : Zone de vente du lieu de vente de la demande précédente.
+- NAME_SELLER_INDUSTRY : Le secteur d'activité du vendeur.
+- CNT_PAYMENT : Durée du crédit précédent à la demande de la demande précédente
+- NAME_YIELD_GROUP ( grouped ) : Taux d'intérêt groupé en petit, moyen et élevé de la demande précédente.
+- PRODUCT_COMBINATION : Combinaison détaillée des produits de la demande précédente.
+- DAYS_FIRST_DRAWING ( time only relative to the application ) : Par rapport à la date de demande de la demande actuelle, quand a eu lieu le premier déboursement de la demande précédente.
+- DAYS_FIRST_DUE ( time only relative to the application ) : Par rapport à la date de la demande actuelle, quand était la première échéance supposée de la demande précédente.
+- DAYS_LAST_DUE_1ST_VERSION (heure uniquement par rapport à la demande) : Par rapport à la date de demande de la demande actuelle, quand était la première échéance de la demande précédente.
+- DAYS_LAST_DUE ( time only relative to the application ) : Relatif à la date d'application de l'application actuelle quand était la dernière date d'échéance de l'application précédente.
+- DAYS_TERMINATION ( time only relative to the application ) : Par rapport à la date de la demande actuelle, quand était la date de fin prévue de la demande précédente.
+- NFLAG_INSURED_ON_APPROVAL : Le client a-t-il demandé une assurance lors de la demande précédente ?

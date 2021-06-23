@@ -1,0 +1,17 @@
+- SK_ID_CURR ( hashed ) : ID du prêt dans notre échantillon - un prêt dans notre échantillon peut avoir 0, 1, 2 ou plus de crédits précédents liés dans le bureau de crédit. 
+- SK_BUREAU_ID ( hashed ) : ID recodé du crédit précédent du Credit Bureau lié à notre prêt (codage unique pour chaque demande de prêt).
+- CREDIT_ACTIVE : Statut des crédits rapportés par le Credit Bureau (CB).
+- CREDIT_CURRENCY ( recoded ) : Devise recodée du crédit du Credit Bureau.
+- DAYS_CREDIT ( time only relative to the application ) : Combien de jours avant la demande actuelle le client a-t-il demandé un crédit au Credit Bureau ?
+- CREDIT_DAY_OVERDUE : Nombre de jours de retard sur le crédit CB au moment de la demande de prêt correspondante dans notre échantillon.
+- DAYS_CREDIT_ENDDATE ( time only relative to the application ) : Durée restante du crédit CB (en jours) au moment de la demande dans Home Credit.
+- DAYS_ENDDATE_FACT ( time only relative to the application ) : Nombre de jours depuis la fin du crédit CB au moment de la demande dans Home Credit (seulement pour les crédits fermés)
+- AMT_CREDIT_MAX_OVERDUE : Montant maximal en retard sur le crédit du Credit Bureau jusqu'à présent (à la date de demande du prêt dans notre échantillon).
+- CNT_CREDIT_PROLONG : Combien de fois le crédit du Credit Bureau a-t-il été prolongé ?
+- AMT_CREDIT_SUM : Montant actuel du crédit du Credit Bureau.
+- AMT_CREDIT_SUM_DEBT : Dette actuelle du crédit du Credit Bureau.
+- AMT_CREDIT_SUM_LIMIT : Limite de crédit actuelle de la carte de crédit déclarée dans le Credit Bureau.
+- AMT_CREDIT_SUM_OVERDUE : Montant actuel des retards de paiement sur le crédit du Credit Bureau.
+- CREDIT_TYPE : Type de crédit du Credit Bureau (voiture, cash,...)
+- DAYS_CREDIT_UPDATE ( time only relative to the application ) : Combien de jours avant la demande de prêt la dernière information sur le crédit du Credit Bureau est-elle arrivée ?
+- AMT_ANNUITY : Annuité du crédit du Credit Bureau.

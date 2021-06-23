@@ -1,0 +1,8 @@
+SK_ID_PREV : ID du crédit précédent dans Home Credit lié au prêt dans notre échantillon. (Un prêt dans notre échantillon peut avoir 0, 1, 2 ou plus de prêts précédents dans Home Credit).
+- SK_ID_CURR : ID du prêt dans notre échantillon.
+- MONTHS_BALANCE ( time only relative to the application ) : Mois du solde par rapport à la date de la demande (-1 signifie que l'information correspond à l'instantané mensuel le plus récent, 0 signifie que l'information correspond à la date de la demande - souvent ce sera la même chose que -1 car beaucoup de banques ne mettent pas à jour régulièrement l'information au Credit Bureau)
+- CNT_INSTALMENT : Durée du crédit précédent (peut changer avec le temps)
+- CNT_INSTALMENT_FUTURE : mensualités restant à payer sur le crédit précédent.
+- NAME_CONTRACT_STATUS : Statut du contrat au cours du mois.
+- SK_DPD : DPD (jours de retard) au cours du mois du crédit précédent
+- SK_DPD_DEF : DPD au cours du mois avec tolérance (les dettes à faible montant sont ignorées) du crédit précédent.

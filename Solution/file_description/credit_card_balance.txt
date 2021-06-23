@@ -1,0 +1,23 @@
+- SK_ID_PREV ( hashed ) : ID du crédit précédent dans Home Credit lié au prêt dans notre échantillon. (Un prêt dans notre échantillon peut avoir 0,1,2 ou plus de prêts précédents dans Home Credit).
+- SK_ID_CURR ( hashed ) : ID du prêt dans notre échantillon.
+- MONTHS_BALANCE ( time only relative to the application ) : Mois du solde par rapport à la date de la demande (-1 signifie la date de solde la plus récente).
+- AMT_BALANCE : Solde au cours du mois du crédit précédent
+- AMT_CREDIT_LIMIT_ACTUAL : Limite de la carte de crédit au cours du mois du crédit précédent.
+- AMT_DRAWINGS_ATM_CURRENT : Montant prélevé au distributeur automatique de billets au cours du mois du crédit précédent.
+- AMT_DRAWINGS_CURRENT : Montant prélevé pendant le mois du crédit précédent.
+- AMT_DRAWINGS_OTHER_CURRENT : Montant des autres prélèvements effectués au cours du mois du crédit précédent.
+- AMT_DRAWINGS_POS_CURRENT : Montant des prélèvements ou des achats de marchandises au cours du mois du crédit précédent.
+- AMT_INST_MIN_REGULARITY : Versement minimal pour ce mois du crédit précédent
+- AMT_PAYMENT_CURRENT : Montant payé par le client au cours du mois sur le crédit précédent.
+- AMT_PAYMENT_TOTAL_CURRENT : Montant total payé par le client au cours du mois sur le crédit précédent.
+- AMT_RECEIVABLE_PRINCIPAL : Montant à recevoir pour le principal du crédit précédent.
+- AMT_RECIVABLE : Montant à recevoir sur le crédit précédent.
+- AMT_TOTAL_RECEIVABLE : Montant total à recevoir sur le crédit précédent.
+- CNT_DRAWINGS_ATM_CURRENT : Nombre de tirages aux guichets automatiques durant ce mois sur le crédit précédent.
+- CNT_DRAWINGS_CURRENT : Nombre de prélèvements effectués au cours de ce mois sur le crédit précédent.
+- CNT_DRAWINGS_OTHER_CURRENT : Nombre d'autres prélèvements effectués au cours de ce mois sur le crédit précédent.
+- CNT_DRAWINGS_POS_CURRENT : Nombre de tirages de marchandises durant ce mois sur le crédit précédent.
+- CNT_INSTALMENT_MATURE_CUM : Nombre d'acomptes payés sur le crédit précédent.
+- NAME_CONTRACT_STATUS : Statut du contrat (actif signé,...) sur le crédit précédent.
+- SK_DPD : DPD (jours de retard) au cours du mois sur le crédit précédent.
+- SK_DPD_DEF : DPD (Jours d'arriérés) du mois avec tolérance (les dettes de faible montant sont ignorées) du crédit précédent.

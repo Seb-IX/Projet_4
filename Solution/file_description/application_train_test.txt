@@ -1,0 +1,122 @@
+- SK_ID_CURR : ID du prêt dans notre échantillon
+- TARGET : Variable cible (1 - client ayant des difficultés de paiement : il/elle a eu un retard de paiement de plus de X jours sur au moins un des Y premiers versements du prêt dans notre échantillon, 0 - tous les autres cas)
+- NAME_CONTRACT_TYPE : Identification si le prêt est cash ou revolving
+- CODE_GENDER : Sexe du client.
+- FLAG_OWN_CAR : Drapeau indiquant si le client possède une voiture.
+- FLAG_OWN_REALTY :  Drapeau si le client possède une maison ou un appartement
+- CNT_CHILDREN : Nombre d'enfants du client.
+- AMT_INCOME_TOTAL : Revenu du client.
+- AMT_CREDIT : Montant du crédit du prêt
+- AMT_ANNUITY : Annuité du prêt
+- AMT_GOODS_PRICE :  Pour les prêts à la consommation, il s'agit du prix du bien pour lequel le prêt est accordé
+- NAME_TYPE_SUITE : Qui accompagnait le client lorsqu'il a demandé le prêt.
+- NAME_INCOME_TYPE : Type de revenu du client (homme d'affaires, travailleur, congé de maternité,�)
+- NAME_EDUCATION_TYPE : Niveau d'éducation le plus élevé atteint par le client.
+- NAME_FAMILY_STATUS : Situation familiale du client.
+- NAME_HOUSING_TYPE : Quelle est la situation du client en matière de logement (en location, chez les parents, ...)
+- REGION_POPULATION_RELATIVE ( normalisée ) : Population normalisée de la région où vit le client (un chiffre plus élevé signifie que le client vit dans une région plus peuplée).
+- DAYS_BIRTH ( time only relative to the application ) : âge du client en jours au moment de la demande.
+- DAYS_EMPLOYED ( time only relative to the application ) : Combien de jours avant la demande la personne a commencé à travailler ?
+- DAYS_REGISTRATION ( time only relative to the application ) : Combien de jours avant la demande le client a changé d'enregistrement ?
+- DAYS_ID_PUBLISH (uniquement par rapport à la demande) : Combien de jours avant la demande le client a-t-il changé le document d'identité avec lequel il a demandé le prêt ?
+- OWN_CAR_AGE : Âge de la voiture du client.
+- FLAG_MOBIL : Le client a-t-il fourni un téléphone portable (1=OUI, 0=NON) ?
+- FLAG_EMP_PHONE : Le client a-t-il fourni un téléphone professionnel (1=Oui, 0=Non) ?
+- FLAG_WORK_PHONE : Le client a-t-il fourni un téléphone fixe (1=Oui, 0=Non) ?
+- FLAG_CONT_MOBILE : Le téléphone portable était-il joignable (1=Oui, 0=Non) ?
+- FLAG_PHONE : Le client a-t-il fourni un téléphone fixe (1=Oui, 0=Non) ?
+- FLAG_EMAIL : Le client a-t-il fourni une adresse électronique (1=OUI, 0=NON) ?
+- OCCUPATION_TYPE : Quel est le type de profession du client ?
+- CNT_FAM_MEMBERS : Combien de membres de la famille le client a-t-il ?
+- REGION_RATING_CLIENT : Notre évaluation de la région où vit le client (1,2,3).
+- REGION_RATING_CLIENT_W_CITY : Notre évaluation de la région où vit le client en tenant compte de la ville (1,2,3).
+- WEEKDAY_APPR_PROCESS_START : Le jour de la semaine où le client a demandé le prêt.
+- HOUR_APPR_PROCESS_START ( arrondi ) : A quelle heure approximative le client a-t-il demandé le prêt ?
+- REG_REGION_NOT_LIVE_REGION : Indicateur si l'adresse permanente du client ne correspond pas à l'adresse de contact (1=différent, 0=identique, au niveau de la région).
+- REG_REGION_NOT_WORK_REGION : Drapeau indiquant que l'adresse permanente du client ne correspond pas à son adresse professionnelle (1=différent, 0=simple, au niveau de la région).
+- LIVE_REGION_NOT_WORK_REGION : Drapeau indiquant que l'adresse de contact du client ne correspond pas à son adresse professionnelle (1=différent, 0=simple, au niveau de la région).
+- REG_CITY_NOT_LIVE_CITY :  Drapeau indiquant que l'adresse permanente du client ne correspond pas à l'adresse de contact (1=différent, 0=simple, au niveau de la ville).
+- REG_CITY_NOT_WORK_CITY :  Drapeau indiquant que l'adresse permanente du client ne correspond pas à l'adresse de travail (1=différent, 0=similaire, au niveau de la ville).
+- LIVE_CITY_NOT_WORK_CITY :  Drapeau indiquant que l'adresse de contact du client ne correspond pas à l'adresse professionnelle (1=différent, 0=identique, au niveau de la ville).
+- ORGANIZATION_TYPE : Type d'organisation où le client travaille.
+- EXT_SOURCE_1 ( normalized ) : Score normalisé de la source de données externe.
+- EXT_SOURCE_2 ( normalisé ) : Score normalisé de la source de données externe.
+- EXT_SOURCE_3 ( normalisé ) : Score normalisé de la source de données externe.
+- APARTMENTS_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- BASEMENTAREA_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- YEARS_BEGINEXPLUATATION_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- YEARS_BUILD_AVG ( normalized ) : Information normalisée sur le bâtiment où vit le client, Quelle est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge du bâtiment, le nombre d'ascenseurs, le nombre d'entrées, l'état du bâtiment, le nombre d'étages.
+- COMMONAREA_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- ELEVATORS_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- ENTRANCES_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- FLOORSMAX_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, Ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- FLOORSMIN_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- LANDAREA_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- LIVINGAPARTMENTS_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- LIVINGAREA_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- NONLIVINGAPARTMENTS_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- NONLIVINGAREA_AVG ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- APARTMENTS_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, Ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- BASEMENTAREA_MODE ( normalized ) : Information normalisée sur le bâtiment où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge du bâtiment, le nombre d'ascenseurs, le nombre d'entrées, l'état du bâtiment, le nombre d'étages.
+- YEARS_BEGINEXPLUATATION_MODE ( normalized ) : Informations normalisées sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- YEARS_BUILD_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- COMMONAREA_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- ELEVATORS_MODE ( normalized ) : Information normalisée sur le bâtiment où vit le client, Quelle est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge du bâtiment, le nombre d'ascenseurs, le nombre d'entrées, l'état du bâtiment, le nombre d'étages.
+- ENTRANCES_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, Ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- FLOORSMAX_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- FLOORSMIN_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- LANDAREA_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- LIVINGAPARTMENTS_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- LIVINGAREA_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- NONLIVINGAPARTMENTS_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- NONLIVINGAREA_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- APARTMENTS_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, Ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- BASEMENTAREA_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- YEARS_BEGINEXPLUATATION_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- YEARS_BUILD_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- COMMONAREA_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- ELEVATORS_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- ENTRANCES_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- FLOORSMAX_MEDI ( normalisé ) : Information normalisée sur le bâtiment où vit le client, Quelle est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge du bâtiment, le nombre d'ascenseurs, le nombre d'entrées, l'état du bâtiment, le nombre d'étages.
+- FLOORSMIN_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- LANDAREA_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- LIVINGAPARTMENTS_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- LIVINGAREA_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- NONLIVINGAPARTMENTS_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- NONLIVINGAREA_MEDI ( normalized ) : Information normalisée sur l'immeuble où vit le client, Ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- FONDKAPREMONT_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- HOUSETYPE_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- TOTALAREA_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages.
+- WALLSMATERIAL_MODE ( normalized ) : Information normalisée sur le bâtiment où vit le client, ce qui est la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge du bâtiment, le nombre d'ascenseurs, le nombre d'entrées, l'état du bâtiment, le nombre d'étages.
+- EMERGENCYSTATE_MODE ( normalized ) : Information normalisée sur l'immeuble où vit le client, Qu'est-ce que la taille moyenne (suffixe _AVG), modus (suffixe _MODE), médiane (suffixe _MEDI) de l'appartement, la surface commune, la surface habitable, l'âge de l'immeuble, le nombre d'ascenseurs, le nombre d'entrées, l'état de l'immeuble, le nombre d'étages ?
+- OBS_30_CNT_SOCIAL_CIRCLE : Combien d'observations de l'environnement social du client avec un défaut observable de 30 DPD (jours d'arriérés) ?
+- DEF_30_CNT_SOCIAL_CIRCLE : Combien d'observations de l'environnement social du client avec défaut de paiement à 30 DPD (jours d'arriérés) ?
+- OBS_60_CNT_SOCIAL_CIRCLE : Combien d'observations de l'environnement social du client avec un défaut observable à 60 DPD (jours d'arriérés) ?
+- DEF_60_CNT_SOCIAL_CIRCLE : Combien d'observations de l'environnement social du client avec un défaut de paiement de 60 DPD (jours d'arriérés) ?
+- DAYS_LAST_PHONE_CHANGE : Combien de jours avant la demande le client a-t-il changé de téléphone ?
+- FLAG_DOCUMENT_2 : Le client a-t-il fourni le document 2 ?
+- FLAG_DOCUMENT_3 : Le client a-t-il fourni le document 3 ?
+- FLAG_DOCUMENT_4 : Le client a-t-il fourni le document 4 ?
+- FLAG_DOCUMENT_5 : Le client a-t-il fourni le document 5 ?
+- FLAG_DOCUMENT_6 : Le client a-t-il fourni le document 6 ?
+- FLAG_DOCUMENT_7 : Le client a-t-il fourni le document 7 ?
+- FLAG_DOCUMENT_8 : Le client a-t-il fourni le document 8 ?
+- FLAG_DOCUMENT_9 : Le client a-t-il fourni le document 9 ?
+- FLAG_DOCUMENT_10 : Le client a-t-il fourni le document 10 ?
+- FLAG_DOCUMENT_11 : Le client a-t-il fourni le document 11 ?
+- FLAG_DOCUMENT_12 : Le client a-t-il fourni le document 12 ?
+- FLAG_DOCUMENT_13 : Le client a-t-il fourni le document 13 ?
+- FLAG_DOCUMENT_14 : Le client a-t-il fourni le document 14 ?
+- FLAG_DOCUMENT_15 : Le client a-t-il fourni le document 15 ?
+- FLAG_DOCUMENT_16 :  Le client a-t-il fourni le document 16
+- FLAG_DOCUMENT_17 : Le client a-t-il fourni le document 17 ?
+- FLAG_DOCUMENT_18 :  Le client a-t-il fourni le document 18
+- FLAG_DOCUMENT_19 :  Le client a-t-il fourni le document 19
+- FLAG_DOCUMENT_20 :  Le client a-t-il fourni le document 20
+- FLAG_DOCUMENT_21 : Le client a-t-il fourni le document 21 ?
+- AMT_REQ_CREDIT_BUREAU_HOUR : Nombre de demandes de renseignements au Bureau de crédit concernant le client une heure avant la demande.
+- AMT_REQ_CREDIT_BUREAU_DAY : Nombre de requêtes adressées au Credit Bureau concernant le client un jour avant la demande (sauf une heure avant la demande)
+- AMT_REQ_CREDIT_BUREAU_WEEK : Nombre de requêtes adressées au Credit Bureau concernant le client une semaine avant la demande (sauf le jour précédant la demande).
+- AMT_REQ_CREDIT_BUREAU_MON : Nombre de demandes de renseignements adressées au Credit Bureau concernant le client un mois avant la demande (sauf une semaine avant la demande).
+- AMT_REQ_CREDIT_BUREAU_QRT : Nombre de demandes de renseignements sur le client adressées au Credit Bureau 3 mois avant la demande (sauf un mois avant la demande).
+- AMT_REQ_CREDIT_BUREAU_YEAR : Nombre de demandes de renseignements adressées au Credit Bureau concernant le client un jour par an (à l'exception des 3 derniers mois avant la demande).

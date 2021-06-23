@@ -1,0 +1,3 @@
+- SK_BUREAU_ID ( hashed ) : ID recodé du crédit du Credit Bureau (codage unique pour chaque demande) - à utiliser pour joindre la table CREDIT_BUREAU. 
+- MONTHS_BALANCE ( time only relative to the application ) : Mois du solde par rapport à la date de la demande (-1 signifie la date de solde la plus récente).
+- STATUS : Statut du prêt Credit Bureau au cours du mois (actif, fermé, DPD0-30,� [C signifie fermé, X signifie statut inconnu, 0 signifie pas de DPD, 1 signifie DPD maximal au cours du mois entre 1-30, 2 signifie DPD 31-60,� 5 signifie DPD 120+ ou vendu ou amorti]. )
