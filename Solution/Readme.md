@@ -8,6 +8,10 @@ Data use on this project is on <a href="https://s3-eu-west-1.amazonaws.com/stati
 
 unzip file and put on "/Solution/data/"
 
+# File :
+
+- P04_01_Notebook is a main file contains, P04_01_Model is iteratif testing model.
+
 # Conda environment :
 
 ## How to use :
@@ -35,6 +39,10 @@ To change channel installer : <br>
 
 To install dependancy : <br>
 `conda install <your-dependency> -c conda-forge` <br>
+
+Install requirement file :<br>
+`pip install -r requirement.txt`
+
 
 ## Add environment to Jyputer notebook :
 
