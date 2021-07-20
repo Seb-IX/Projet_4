@@ -8,6 +8,10 @@ Data use on this project is on <a href="https://s3-eu-west-1.amazonaws.com/stati
 
 unzip file and put on "/Solution/data/"
 
+# Jupyter nbviewer:
+
+<a href="https://nbviewer.jupyter.org/github/Seb-IX/Projet_4/blob/main/Solution/P04_01_notebook.ipynb">jupyter nb_viewer</a>
+
 # File :
 
 - P04_01_Notebook is a main file contains, P04_01_Model is iteratif testing model.
@@ -28,7 +32,7 @@ Exit current environment : <br>
 To remove environment : <br>
 `conda env remove --name projet4` <br>
 
-To create environement file (export current environement to file)  : <br>
+To create environement file (export current environement to file) :<br>
 `conda env export > environment.yaml` <br>
 
 To create environement for the first time : <br>
