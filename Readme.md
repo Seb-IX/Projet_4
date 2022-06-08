@@ -1,13 +1,10 @@
-# Projet configuration
-<ul>
-<li>/Enoncé/ :<br>
-	This directory contains statement for project in french</li>
-<li>/Présentation/ :<br>
-	This directory contains my powerpoint for jury to validated my project</li>
-<li>/Ressource/ :<br>
-	This directory contains ressources to helped or needed for the project</li>
-<li>/Solution/ :<br>
-	This directory contains the solution and the final test submitted to the jury to validate my project.</li>
-</ul>	
+# Project "prêt à dépenser"
+<p align="center">
+<img src="https://github.com/Seb-IX/Projet_4/blob/main/Solution/img/logo.png" style="width:300px;">
+</p>
+<br>
+The company prêt à dépenser offers consumer loans for people with little or no loan history.
 
-**By TUCCIO Sébastien**
+This project consists in creating a "scoring" tool for the acceptance of consumer loans or not.
+
+> You will find the details of this project in the "/Solution/" folder

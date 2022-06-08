@@ -10,7 +10,7 @@ unzip file and put on "/Solution/data/"
 
 # Jupyter nbviewer:
 
-<a href="https://nbviewer.jupyter.org/github/Seb-IX/Projet_4/blob/main/Solution/P04_01_notebook.ipynb">jupyter nb_viewer</a>
+<a href="https://nbviewer.jupyter.org/github/Seb-IX/Projet_4/blob/main/Solution/P04_01_notebook.ipynb" target="_blank">jupyter nb_viewer</a>
 
 # File :
 
